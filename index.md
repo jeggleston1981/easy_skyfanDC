@@ -9,7 +9,8 @@ Video about the fan : https://youtu.be/DethhMjQXy0
 EasyEDA files : https://oshwlab.com/james_6977/sky-fan-dc
 
 # SkyFan DC Module Version 2
-If you have version 2 the pinout is different to accomodate the JST SH port that is for I2C, that port is connected to pins 4 and 5 which are the default I2C pins for the ESP8285.  If you have that style board please use the micro_skyfan2.yaml file as a base file to use if you wish to make modifications.
+If you have version 2 the pinout is different to accomodate the JST SH port that is for I2C, that port is connected to pins 4 and 5 which are the default I2C pins for the ESP8285.  In that case these are the files that you want for you module here at this repo.
+The port on the module is 4pin JST SH 1mm and the same pinout as stemma qt 4 pin with 3.3v GND and SDA SCL, the idea is that it can be connected the the temperature sensor module such as the TMP117.
 
 
 # Installation
