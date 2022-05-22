@@ -1,7 +1,7 @@
 substitutions:
   device_name: easy-skyfandc
   fan_name: SkyFanDC
-  temp_name: SkyFanDC-TempNTC
+  temp_name: SkyFanDC-Temp
   temp_name_tmp117: SkyFanDC-TMP117
 esphome:
   name: ${device_name}
