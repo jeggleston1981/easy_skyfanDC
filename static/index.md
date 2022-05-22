@@ -14,7 +14,13 @@ The port on the module is 4pin JST SH 1mm and the same pinout as stemma qt 4 pin
 
 
 # Installation
+If you bought a premade module, then you only need to plug it it, and setup up your wifi credentials via the access point it creates, which will be easy-skyfandc-<MAC>, then Home Assistant will discover it on your network and setup can be completed in the home assistant settings page.
+You can also in settings change the name of the device and it's entities.
+You don't need to up ESPhome installed or flash the device unless you want too.
+I reason you may want to is to add control over the SkyfanDC light, which is possible, or to add a sensor via the i2c port that is compatible with ESPhome.
+  
 
+If you have your own home made device you can flash it here if you like:
 You can use the button below to install the pre-built firmware directly to your device via USB from the browser.
 
 <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
