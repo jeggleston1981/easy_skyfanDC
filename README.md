@@ -1,7 +1,7 @@
 # Sky FanDC Yaml Configuration for the WIFI module for Home Assistant
 
 This repo is the YAML configuration for the module with the JST SH port on it.
-Futher information and instructions are here:
+Futher information and instructions are here: https://jeggleston1981.github.io/easy_skyfanDC/
 
 
 
