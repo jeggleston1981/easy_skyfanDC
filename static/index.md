@@ -1,3 +1,4 @@
+(skyfan.jpg)
 # SkyFan DC ESPhome Setup
 
 The basic yaml config for the SkyfanDC made by Ventair flashing it onto your ESP8266 module and put it in the fan controller.
