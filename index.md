@@ -1,3 +1,4 @@
+![Sky Fan DC Modules](skyfan.jpg)
 # SkyFan DC ESPhome Setup
 
 The basic yaml config for the SkyfanDC made by Ventair flashing it onto your ESP8266 module and put it in the fan controller.
@@ -14,10 +15,10 @@ The port on the module is 4pin JST SH 1mm and the same pinout as stemma qt 4 pin
 
 
 # Installation
-If you bought a premade module, then you only need to plug it it, and setup up your wifi credentials via the access point it creates, which will be easy-skyfandc-<MAC>, then Home Assistant will discover it on your network and setup can be completed in the home assistant settings page.
+If you bought a pre-made module, then you only need to plug it it, and setup up your wifi credentials via the access point it creates, which will be easy-skyfandc-MAC, then Home Assistant will discover it on your network and setup can be completed in the home assistant settings page.
 You can also in settings change the name of the device and it's entities.
-You don't need to up ESPhome installed or flash the device unless you want too.
-I reason you may want to is to add control over the SkyfanDC light, which is possible, or to add a sensor via the i2c port that is compatible with ESPhome.
+You don't need to have ESPhome installed or flash the device unless you want too.
+Some reason's you may want to install ESPhome to is to add control over the SkyfanDC light(the only setting that you can't change is color temp, you will need to use the remote for that), or to add a sensor via the i2c port that is compatible with ESPhome like the TMP117.
   
 
 If you have your own home made device you can flash it here if you like:

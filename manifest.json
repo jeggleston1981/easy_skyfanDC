@@ -1,6 +1,6 @@
 {
-  "name": "Template Project",
-  "version": "2022.5.0",
+  "name": "Easy SkyFanDC Project",
+  "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
@@ -9,15 +9,6 @@
       "parts": [
         {
           "path": "easy-skyfandc-esp8266/easy-skyfandc-esp8266.bin",
-          "offset": 0
-        }
-      ]
-    },
-    {
-      "chipFamily": "ESP32",
-      "parts": [
-        {
-          "path": "project-template-esp32/project-template-esp32.bin",
           "offset": 0
         }
       ]
