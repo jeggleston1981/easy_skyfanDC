@@ -10,6 +10,6 @@ jobs:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
       # CHANGEME: Set the filenames of your config files here:
-      files: skyfandc-C3-esp32.yaml,skyfandc-esp8266.yaml
+      files: skyfandc-esp8266.yaml #skyfandc-C3-esp32.yaml
       # CHANGEME: Set the name of your project here:
-      name: Template Project
+      name: Easy SkyFanDC Project
