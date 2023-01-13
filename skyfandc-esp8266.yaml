@@ -1,8 +1,8 @@
 substitutions:
-  device_name: easy-skyfandc
-  fan_name: SkyFanDC
-  temp_name: SkyFanDC-Temp
-  temp_name_tmp117: SkyFanDC-TMP117
+  device_name: easy-skyfandc #Device name on network
+  fan_name: SkyFanDC #Name of fan entity in home assistant
+  temp_name: SkyFanDC-TempNTC #Name of NTC sensor if enabled
+  temp_name_tmp117: SkyFanDC-TMP117 #Name of I2C sensor if connected and enabled
 esphome:
   name: ${device_name}
   name_add_mac_suffix: false
@@ -78,6 +78,7 @@ fan:
 sensor:
 #Template sensor that sends the correct reading through to Home Assistant
   - platform: template
+    disabled_by_default: true
     name: ${temp_name}
     id: skyfan_temp
     disabled_by_default: true
