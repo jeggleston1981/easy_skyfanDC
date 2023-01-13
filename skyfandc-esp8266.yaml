@@ -8,7 +8,7 @@ esphome:
   name_add_mac_suffix: false
   project:
     name: jimmy.easy_skyfandc
-    version: "0.2"
+    version: "2022.12.3"
   on_boot: #Setup temperature reading so you don't get a random reading come through at startup
     priority: -100
     then:
