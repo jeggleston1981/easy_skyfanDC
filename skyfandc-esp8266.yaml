@@ -1,3 +1,4 @@
+#See blog post how to change name of SkyFanDC device at www.egglec.com.au
 substitutions:
   device_name: easy-skyfandc #Device name on network
   fan_name: SkyFanDC #Name of fan entity in home assistant
@@ -53,7 +54,8 @@ i2c:
   scan: true
 ota:
 
-wifi:
+wifi: #See blog post how to change name of device at www.egglec.com.au
+  #use_address: easy-skyfandc-MAC.local
   ap:
     password: ""
     
