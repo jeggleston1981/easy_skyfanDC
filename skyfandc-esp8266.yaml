@@ -83,7 +83,6 @@ sensor:
     disabled_by_default: true
     name: ${temp_name}
     id: skyfan_temp
-    disabled_by_default: true
     
 #ADC sensor to get the voltage drop on the thermister
   - platform: adc
