@@ -2,6 +2,7 @@
 substitutions:
   device_name: easy-skyfandc #Device name on network
   fan_name: SkyFanDC #Name of fan entity in home assistant
+  fan_light: SkyFanDC_Light #Name of light entity in home assistant, if fan has a light
   temp_name: SkyFanDC-TempNTC #Name of NTC sensor if enabled
   temp_name_tmp117: SkyFanDC-TMP117 #Name of I2C sensor if connected and enabled
 esphome:
@@ -38,7 +39,7 @@ external_components:
 #Dashboard import if you want to adopt the device on your esphome dashboard
 dashboard_import:
   package_import_url: github://jeggleston1981/easy_skyfanDC/skyfandc-esp8266.yaml@main
-  import_full_config: true
+  import_full_config: false
 
 api:
 
@@ -128,3 +129,16 @@ switch:
       number: 2
       inverted: true
     id: led
+light:
+  - platform: "tuya"
+    disabled_by_default: true
+    name: ${fan_light}
+    dimmer_datapoint: 16
+    min_value: 1
+    max_value: 5
+    switch_datapoint: 15
+    color_temperature_datapoint: 19
+    color_temperature_max_value: 2
+    color_temperature_invert: true
+    cold_white_color_temperature: 6500K
+    warm_white_color_temperature: 3000K
